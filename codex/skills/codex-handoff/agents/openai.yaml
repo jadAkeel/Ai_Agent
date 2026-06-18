@@ -1,0 +1,5 @@
+interface:
+  display_name: "Codex Handoff"
+  short_description: "Create structured handoff notes for fresh coding-agent sessions."
+  icon: "🔁"
+  primary_color: "#3B82F6"

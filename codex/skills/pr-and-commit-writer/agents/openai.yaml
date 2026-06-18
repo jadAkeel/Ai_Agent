@@ -1,0 +1,3 @@
+display_name: "PR and Commit Writer"
+short_description: "Write commit messages and PR descriptions from real diffs."
+default_prompt: "Inspect the current diff and write a professional commit message and PR description without inventing tests."

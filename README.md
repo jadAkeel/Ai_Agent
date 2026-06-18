@@ -4,6 +4,20 @@ This bridge lets Codex call OpenCode agents through MCP while keeping Codex as t
 
 After changing `server.js`, restart or reload the MCP server process before relying on live MCP tool output. The running Node process keeps the previously loaded bridge code until it is restarted.
 
+## Repository Contents
+
+This repo is also a safe backup of the important non-secret global setup files:
+
+- `codex/agents/`: current Codex orchestrator and subagent configs.
+- `codex/skills/`: custom Codex skills, excluding bundled/system skills.
+- `codex/config.example.toml`: sanitized MCP config example.
+- `opencode/agents/`: current OpenCode agent configs.
+- `opencode/skills/`: current OpenCode skills, excluding backups.
+- `opencode/opencode.jsonc`: sanitized OpenCode config reference.
+- `docs/`: architecture goals and safe publish manifest.
+
+Sensitive runtime files are intentionally excluded. See `docs/SAFE_PUBLISH_MANIFEST.md`.
+
 ## Architecture Overview
 
 The bridge implements this global workflow:
@@ -336,7 +350,7 @@ For MCP-delegated work, the bridge keeps active locks in a local SQLite registry
 <workspace>/.mcp/bridge-state.sqlite
 ```
 
-If no safe workspace root is available, the bridge uses the global bridge state directory under `C:\Users\10User\.codex\codex-opencode-mcp`.
+If no safe workspace root is available, the bridge uses the global bridge state directory under `%USERPROFILE%\.codex\codex-opencode-mcp`.
 
 The SQLite registry uses WAL mode and token-based temporary locks. Lock release is allowed only when both the run id and lock token match, so an old run cannot release a newer lock.
 

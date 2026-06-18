@@ -1,0 +1,3 @@
+display_name: "Bug Investigator"
+short_description: "Find root cause before fixing bugs."
+default_prompt: "Investigate this bug and identify the root cause, evidence, minimal fix, and verification plan before editing."

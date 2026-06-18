@@ -1,0 +1,20 @@
+# Sanitized Codex config example for this MCP bridge.
+# Do not copy your full ~/.codex/config.toml into a public or shared repo.
+# Keep auth.json, runtime paths, session state, logs, and machine-specific trust
+# entries local to your computer.
+
+model = "gpt-5.5"
+model_reasoning_effort = "high"
+service_tier = "default"
+
+[mcp_servers.opencode]
+command = "node"
+args = ["C:\\path\\to\\codex-opencode-mcp\\server.js"]
+
+# Optional MCP bridge environment overrides:
+#
+# CODEX_OPENCODE_LOCK_MODE=auto
+# CODEX_OPENCODE_QUEUE_MODE=memory
+# CODEX_OPENCODE_QUEUE_PARALLEL_LIMIT=6
+# CODEX_OPENCODE_WORKTREE_MODE=off
+# CODEX_OPENCODE_WORKTREE_ROOT=.codex-worktrees

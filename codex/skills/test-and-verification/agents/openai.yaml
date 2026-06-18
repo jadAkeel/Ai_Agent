@@ -1,0 +1,3 @@
+display_name: "Test and Verification"
+short_description: "Create and run a practical verification plan."
+default_prompt: "Verify this change. Identify the test strategy, run relevant checks, and separate verified from unverified behavior."

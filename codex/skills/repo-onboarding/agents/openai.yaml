@@ -1,0 +1,3 @@
+display_name: "Repo Onboarding"
+short_description: "Analyze a repository and produce a practical project map."
+default_prompt: "Analyze this repository and create a concise project map with stack, commands, risks, and next steps."

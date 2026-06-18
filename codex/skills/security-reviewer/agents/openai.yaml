@@ -1,0 +1,3 @@
+display_name: "Security Reviewer"
+short_description: "Review sensitive changes for concrete security risks."
+default_prompt: "Security review this change. Focus on confirmed issues, potential risks, sensitive areas, fixes, and verification."

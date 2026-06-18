@@ -1,0 +1,3 @@
+display_name: "Docs Updater"
+short_description: "Update or recommend concise documentation changes."
+default_prompt: "Check whether this change needs documentation updates, then update or recommend the necessary docs."

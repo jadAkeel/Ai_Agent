@@ -1,0 +1,3 @@
+display_name: "Senior Code Reviewer"
+short_description: "Review diffs for meaningful engineering issues."
+default_prompt: "Review this diff like a strict senior engineer and return severity-ordered findings."

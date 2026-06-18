@@ -1,0 +1,3 @@
+display_name: "Safe Implementation"
+short_description: "Implement focused changes with minimal unnecessary edits."
+default_prompt: "Implement this safely with minimal focused changes, following existing project patterns and verifying the result."

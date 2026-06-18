@@ -35,9 +35,9 @@ This is a global setup, not a project-local setup.
 Main locations:
 
 ```text
-C:\Users\10User\codex-opencode-mcp\
-C:\Users\10User\.codex\
-C:\Users\10User\.config\opencode\agents\
+<repo>\
+%USERPROFILE%\.codex\
+%USERPROFILE%\.config\opencode\agents\
 ```
 
 Do not create repo-local agent or Spec Kit folders unless the user explicitly asks:
